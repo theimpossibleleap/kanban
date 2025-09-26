@@ -23,8 +23,8 @@ const ItemCard: React.FC<ItemProps> = ({ item, setTaskData }) => {
           value={item.status}
           onChange={(e) =>
             setTaskData((prev) =>
-              prev.map((i) =>
-                i.id === item.id ? { ...i, status: e.target.value } : i,
+              prev.map((prevItem) =>
+                prevItem.id === item.id ? { ...prevItem, status: e.target.value } : prevItem,
               ),
             )
           }
