@@ -8,7 +8,16 @@ interface ItemProps {
 const ItemCard: React.FC<ItemProps> = ({ item, setTaskData }) => {
   return (
     <>
-      <div style={{ marginBottom: "3em" }}>
+      <div
+        style={{
+          marginBottom: "3em",
+          background: "white",
+          border: "1px solid rgba(0,0,0,0.1)",
+          margin: "1em",
+          padding: "1em",
+          borderRadius: "1em",
+        }}
+      >
         <p>{item.item}</p>
         <select
           value={item.status}
