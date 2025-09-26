@@ -39,9 +39,11 @@
 }
 
 .board-column h1 {
-    padding: 1em;
+    text-transform: uppercase;
+    font-size: 1.5em;
 }
 
 .count {
+    text-transform: uppercase;
     font-weight: bold;
 }
